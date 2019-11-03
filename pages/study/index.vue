@@ -1,9 +1,9 @@
 <template>
 	<view class="container">
 		<view class="header">
-			药名
+			命令
 			<switch :checked='nameSwitch' @change="changeSwitch1" />
-			功效
+			作用
 			<switch :checked='effectSwitch' @change="changeSwitch2" />
 		</view>
 

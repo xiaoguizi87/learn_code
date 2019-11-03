@@ -91,7 +91,7 @@
         })
 				uni.showModal({
 					title: '测试结果',
-					content: `您的分数是${score}分,获得"${title}"的称号\n\n答错的中药如下:\n${wrongAns}`,
+					content: `您的分数是${score}分,获得"${title}"的称号\n\n答错的如下:\n${wrongAns}`,
 					showCancel: true,
 					cancelText: '取消',
 					confirmText: '重来',
@@ -129,12 +129,14 @@
 					clearTimeout(this.timer)
 				}
 				this.problemIdx++
+				this.problemIdx = Math.min(10, this.problemIdx)
 			},
 			handlePrev() {
 				if (this.timer) {
 					clearTimeout(this.timer)
 				}
 				this.problemIdx--
+				this.problemIdx = Math.max(0, this.problemIdx)
 			},
 			calcScore() {
 				console.log(this.checkedValues[0])
@@ -151,17 +153,17 @@
 			},
 			getTitleByScore(score) {
 				if (score < 20) {
-					return '药童'
+					return '学生'
 				} else if (score < 40) {
-					return '药师'
+					return '助理工程师'
 				} else if (score < 60) {
-					return '药王'
+					return '初级工程师'
 				} else if (score < 80) {
-					return '药神'
+					return '中级工程师'
 				} else if (score < 100) {
-					return '药圣'
+					return '高级工程师'
 				} else {
-					return '药仙'
+					return '技术总监'
 				}
 			},
       getEffectByName(name) {

@@ -5,7 +5,7 @@ import App from './App'
 Vue.config.productionTip = false
 App.mpType = 'app'
 wx.cloud.init({
-  env: 'tcm-database-04ig7'
+  env: 'lean-code-uwvee'
 })
 const app = new Vue(App)
 app.$mount()
@@ -13,15 +13,15 @@ app.$mount()
 
 
 
-wx.cloud.callFunction({
-  name: 'get-problems',
-  data: {}
-}).then(res => {
-  console.log(res.result.problems)
-  let OPENID = res.result.OPENID
-  wx.setStorage({
-    key: "OPENID",
-    data: OPENID
-  })
-  console.log(OPENID)
-})
+// wx.cloud.callFunction({
+//   name: 'get-problems',
+//   data: {}
+// }).then(res => {
+//   console.log(res.result.problems)
+//   let OPENID = res.result.OPENID
+//   wx.setStorage({
+//     key: "OPENID",
+//     data: OPENID
+//   })
+//   console.log(OPENID)
+// })

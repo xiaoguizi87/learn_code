@@ -3,20 +3,20 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "趣学中草药"
+				"navigationBarTitleText": "趣学编程新手村"
 			}
 		},
 		{
 			"path": "pages/mine/index",
 			"style": {
-				"navigationBarTitleText": "趣学中草药"
+				"navigationBarTitleText": "趣学编程新手村"
 			},
 			"usingComponents": {}
 		},
 		{
 			"path": "pages/study/index",
 			"style": {
-				"navigationBarTitleText": "趣学中草药"
+				"navigationBarTitleText": "趣学编程新手村"
 			},
 			"usingComponents": {}
 		}, {
@@ -40,7 +40,7 @@
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "趣学中草药",
+		"navigationBarTitleText": "趣学编程新手村",
 		"navigationBarBackgroundColor": "#F8F8F8",
 		"backgroundColor": "#F8F8F8"
 	},
