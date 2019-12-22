@@ -1,0 +1,1 @@
+<view class="main"><text class="titleTxt">趣学小学语文</text><button data-event-opts="{{[['tap',[['goto',['/pages/game/game']]]]]}}" bindtap="__e">常识练习</button></view>
